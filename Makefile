@@ -21,7 +21,7 @@ output/.complete: .spago $(PS_SOURCEFILES) $(PS_ERL_FFI)
 
 testoutput/.complete: .spago $(PS_SOURCEFILES) $(PS_ERL_FFI) $(PS_TEST_SOURCEFILES) $(PS_TEST_ERL_FFI)
 	# Should be able to just use the below, but spago does not pass the testouput directory through to the purs backend
-	spago -x test.dhall build --purs-args "-o testoutput"
+	# spago -x test.dhall build --purs-args "-o testoutput"
 	# Start of workaround ------------------------------------
 	spago -x test.dhall sources | xargs purs compile -o testoutput --codegen corefn
 	purerl -o testoutput
