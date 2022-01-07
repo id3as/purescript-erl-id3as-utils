@@ -1,4 +1,4 @@
--module(erl_id3as_gproc@foreign).
+-module(erl_id3as_utils_gproc@foreign).
 
 -export([ whereisNameImpl/3
         ]).

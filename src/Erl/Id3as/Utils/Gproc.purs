@@ -1,4 +1,4 @@
-module Erl.Id3as.Gproc
+module Erl.Id3as.Utils.Gproc
   ( via
   , whereisName
   ) where
