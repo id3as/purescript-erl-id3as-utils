@@ -1,0 +1,12 @@
+{application, id3as_utils_test,
+ [ {description, "Tests for id3as utils code"}
+ , {vsn, "id3as_utils_test"}
+ , {registered, []}
+ , {modules, []}
+ , {applications, [ kernel
+                  , stdlib
+                  , jsx
+                  ]}
+ , {mod, {id3as_utils_test_app, []}}
+ , {env, []}
+ ]}.
